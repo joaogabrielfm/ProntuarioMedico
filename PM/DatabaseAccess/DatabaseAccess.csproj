@@ -43,8 +43,10 @@
     <Compile Include="CuidadorFormalAccess.cs" />
     <Compile Include="CuidadorInformalAccess.cs" />
     <Compile Include="DBAccess.cs" />
+    <Compile Include="EspecializacaoLaboratoristaAccess.cs" />
     <Compile Include="FamiliarAccess.cs" />
     <Compile Include="FarmaceuticoAccess.cs" />
+    <Compile Include="LaboratoristaAccess.cs" />
     <Compile Include="MedicoAccess.cs" />
     <Compile Include="PacienteAccess.cs" />
     <Compile Include="PessoaAccess.cs" />

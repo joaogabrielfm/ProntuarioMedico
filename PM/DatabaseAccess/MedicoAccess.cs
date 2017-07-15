@@ -132,7 +132,7 @@ namespace DatabaseAccess
             sqlcomm = new SqlCommand();
             sqlcomm.CommandText = sSQL;
 
-            sqlparam = new SqlParameter("@CMR", medico.crm);
+            sqlparam = new SqlParameter("@CRM", medico.crm);
             sqlcomm.Parameters.Add(sqlparam);
 
             ExecNonQuery(sqlcomm);
