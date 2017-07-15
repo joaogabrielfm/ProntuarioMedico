@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    public abstract class Pessoa
+    public class Pessoa
     {
         public string cpf { get; set; }
         public string prenome { get; set; }

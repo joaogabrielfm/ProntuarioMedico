@@ -58,4 +58,16 @@
   <ItemGroup>
     <Folder Include="Properties" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="tbl_cuidador_formal.sql" />
+    <Build Include="tbl_cuidador_informal.sql" />
+    <Build Include="tbl_especializacao_laboratorista.sql" />
+    <Build Include="tbl_familiar.sql" />
+    <Build Include="tbl_farmaceutico.sql" />
+    <Build Include="tbl_laboratorista.sql" />
+    <Build Include="tbl_medico.sql" />
+    <Build Include="tbl_paciente.sql" />
+    <Build Include="tbl_pessoa.sql" />
+    <Build Include="tbl_telefone_pessoa.sql" />
+  </ItemGroup>
 </Project>
