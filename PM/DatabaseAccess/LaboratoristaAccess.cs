@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DatabaseAccess
 {
-    class LaboratoristaAccess : DBAccess
+    public class LaboratoristaAccess : DBAccess
     {
         //Constructor function
         public LaboratoristaAccess(string connectionString) : base(connectionString) { }

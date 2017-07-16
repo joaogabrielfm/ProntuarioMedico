@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DatabaseAccess
 {
-    class EspecializacaoLaboratoristaAccess : DBAccess
+    public class EspecializacaoLaboratoristaAccess : DBAccess
     {
         //Constructor function
         public EspecializacaoLaboratoristaAccess(string connectionString) : base(connectionString) { }

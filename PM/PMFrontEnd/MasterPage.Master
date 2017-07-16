@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="PMFrontEnd.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 123px;
+            height: 29px;
+        }
+    </style>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/extras.less" rel="stylesheet" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+   
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="navbar navbar-inverse navbar-fixed-top" style="position:relative; box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24); margin:0px">
+            <a class="navbar-brand" href="default.aspx">Prontúário Médico</a>           
+        </div><!-- navbar -->
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+
+    </form>
+</body>
+</html>

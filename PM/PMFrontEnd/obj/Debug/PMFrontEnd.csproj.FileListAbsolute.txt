@@ -36,3 +36,5 @@ C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\PMFrontEnd\bin\Model.pdb
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\PMFrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\PMFrontEnd\obj\Debug\PMFrontEnd.dll
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\PMFrontEnd\obj\Debug\PMFrontEnd.pdb
+C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\PMFrontEnd\bin\DatabaseAccess.dll
+C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\PMFrontEnd\bin\DatabaseAccess.pdb

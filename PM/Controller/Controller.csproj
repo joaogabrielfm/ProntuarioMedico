@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrarMedicoController.cs" />
     <Compile Include="_BaseController.cs" />
   </ItemGroup>
   <ItemGroup>
