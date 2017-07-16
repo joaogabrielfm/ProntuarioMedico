@@ -7,3 +7,12 @@ C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\Database\obj\Debug\Databas
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\Database\obj\Debug\Database.pdb
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\Database\bin\Debug\Database.dll
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\Database\bin\Debug\Database.pdb
+C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\Database\bin\Debug\Database.dacpac
+C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\Database\bin\Debug\Database.dll
+C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\Database\bin\Debug\Database.pdb
+C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\Database\obj\Debug\Model.xml
+C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\Database\obj\Debug\refactor.xml
+C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\Database\obj\Debug\postdeploy.sql
+C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\Database\obj\Debug\predeploy.sql
+C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\Database\obj\Debug\Database.dll
+C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\Database\obj\Debug\Database.pdb

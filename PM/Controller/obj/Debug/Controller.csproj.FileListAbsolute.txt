@@ -7,3 +7,6 @@ C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\Controller\bin\Debug\Model
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\Controller\obj\Debug\Controller.dll
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\Controller\obj\Debug\Controller.pdb
+C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
+C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\Controller\obj\Debug\Controller.dll
+C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\Controller\obj\Debug\Controller.pdb
