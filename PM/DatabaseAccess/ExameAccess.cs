@@ -13,7 +13,7 @@ namespace DatabaseAccess
     {
         //Constructor function
         public ExameAccess(string connectionString) : base(connectionString) { }
-
+        /*
         //Esta funcao insere um exame na base de dados
         public void InsertExame(Exame exame)
         {
@@ -114,6 +114,6 @@ namespace DatabaseAccess
 
             DataTable dt = new DataTable();
             dt = ExecReader(sqlcomm);
-        }
+        }*/
     }
 }

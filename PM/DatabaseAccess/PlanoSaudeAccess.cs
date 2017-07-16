@@ -13,7 +13,7 @@ namespace DatabaseAccess
     {
         //Constructor function
         public PlanoSaudeAccess(string connectionString) : base(connectionString) { }
-
+        /*
         //Esta funcao insere um plano na base de dados
         public void InsertPlanoSaude(PlanoSaude plano)
         {
@@ -143,6 +143,6 @@ namespace DatabaseAccess
 
             DataTable dt = new DataTable();
             dt = ExecReader(sqlcomm);
-        }
+        }*/
     }
 }
