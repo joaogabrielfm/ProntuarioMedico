@@ -7,8 +7,3 @@ C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\Database\obj\Debug\Databas
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\Database\obj\Debug\Database.pdb
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\Database\bin\Debug\Database.dll
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\Database\bin\Debug\Database.pdb
-C:\Users\admin\Documents\ProntuarioMedico\PM\Database\bin\Debug\Database.dacpac
-C:\Users\admin\Documents\ProntuarioMedico\PM\Database\obj\Debug\Database.dll
-C:\Users\admin\Documents\ProntuarioMedico\PM\Database\obj\Debug\Database.pdb
-C:\Users\admin\Documents\ProntuarioMedico\PM\Database\bin\Debug\Database.dll
-C:\Users\admin\Documents\ProntuarioMedico\PM\Database\bin\Debug\Database.pdb

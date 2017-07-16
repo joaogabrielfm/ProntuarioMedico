@@ -40,19 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AnamneseAccess.cs" />
     <Compile Include="CuidadorFormalAccess.cs" />
     <Compile Include="CuidadorInformalAccess.cs" />
     <Compile Include="DBAccess.cs" />
     <Compile Include="EspecializacaoLaboratoristaAccess.cs" />
-    <Compile Include="ExameAccess.cs" />
     <Compile Include="FamiliarAccess.cs" />
     <Compile Include="FarmaceuticoAccess.cs" />
     <Compile Include="LaboratoristaAccess.cs" />
     <Compile Include="MedicoAccess.cs" />
     <Compile Include="PacienteAccess.cs" />
     <Compile Include="PessoaAccess.cs" />
-    <Compile Include="PlanoSaudeAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TelefonePessoaAccess.cs" />
   </ItemGroup>
