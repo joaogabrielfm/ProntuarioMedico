@@ -6,8 +6,10 @@
     [Valor_atualizado] FLOAT NOT NULL, 
     [Carencia] DATE NOT NULL, 
     [Data_reajuste] DATE NOT NULL, 
-    [Tipo_plano ] VARCHAR(20) NOT NULL, 
+    [Tipo_plano] VARCHAR(20) NOT NULL, 
     [Valor_mensal] FLOAT NOT NULL, 
     [Nome] VARCHAR(40) NOT NULL, 
-    PRIMARY KEY ([CPF],[CodPlano])
+	[CPF] VARCHAR(14) NOT NULL,
+	CONSTRAINT [FK_tbl_plano_saude_Pessoa_ToTable] FOREIGN KEY ([CPF]) REFERENCES [tbl_pessoa]([CPF]),
+    CONSTRAINT [PK_tbl_plano_saude] PRIMARY KEY ([CPF],[CodPlano]),
 )
