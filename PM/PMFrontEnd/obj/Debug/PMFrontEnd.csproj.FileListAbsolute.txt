@@ -1,3 +1,4 @@
+C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\PMFrontEnd\obj\Debug\PMFrontEnd.csprojResolveAssemblyReference.cache
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\PMFrontEnd\bin\roslyn\csc.exe
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\PMFrontEnd\bin\roslyn\csc.exe.config
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\PMFrontEnd\bin\roslyn\csc.rsp
@@ -30,11 +31,10 @@ C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\PMFrontEnd\bin\PMFrontEnd.
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\PMFrontEnd\bin\Controller.dll
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\PMFrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\PMFrontEnd\bin\Model.dll
-C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\PMFrontEnd\bin\DatabaseAccess.dll
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\PMFrontEnd\bin\Controller.pdb
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\PMFrontEnd\bin\Model.pdb
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\PMFrontEnd\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\PMFrontEnd\bin\DatabaseAccess.pdb
-C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\PMFrontEnd\obj\Debug\PMFrontEnd.csprojResolveAssemblyReference.cache
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\PMFrontEnd\obj\Debug\PMFrontEnd.dll
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\PMFrontEnd\obj\Debug\PMFrontEnd.pdb
+C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\PMFrontEnd\bin\DatabaseAccess.dll
+C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\PMFrontEnd\bin\DatabaseAccess.pdb

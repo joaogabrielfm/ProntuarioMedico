@@ -72,18 +72,6 @@
     <Build Include="tbl_anamnese.sql" />
     <Build Include="tbl_exame.sql" />
     <Build Include="tbl_plano_saude.sql" />
-    <Build Include="tbl_clinica.sql" />
-    <Build Include="tbl_email_clinica.sql" />
-    <Build Include="tbl_email_farmacia.sql" />
-    <Build Include="tbl_email_hospital.sql" />
-    <Build Include="tbl_email_laboratorio.sql" />
-    <Build Include="tbl_farmacia.sql" />
-    <Build Include="tbl_hospital.sql" />
-    <Build Include="tbl_laboratorio.sql" />
-    <Build Include="tbl_telefone_clinica.sql" />
-    <Build Include="tbl_telefone_farmacia.sql" />
-    <Build Include="tbl_telefone_hospital.sql" />
-    <Build Include="tbl_telefone_laboratorio.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Database.refactorlog" />
