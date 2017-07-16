@@ -13,7 +13,7 @@ namespace DatabaseAccess
     {
         //Constructor function
         public AnamneseAccess(string connectionString) : base(connectionString) { }
-
+        /*
         //Esta funcao insere uma anamnese na base de dados
         public void InsertAnamnese(string CPF, int Id_anamnese)
         {
@@ -69,7 +69,7 @@ namespace DatabaseAccess
             DataTable dt = new DataTable();
             dt = ExecReader(sqlcomm);
         }
-
+        */
     }
 }
-}
+
