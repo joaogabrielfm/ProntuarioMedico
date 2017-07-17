@@ -13,3 +13,8 @@ C:\Users\admin\Documents\ProntuarioMedico\PM\Model\bin\Debug\Model.pdb
 C:\Users\admin\Documents\ProntuarioMedico\PM\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 C:\Users\admin\Documents\ProntuarioMedico\PM\Model\obj\Debug\Model.dll
 C:\Users\admin\Documents\ProntuarioMedico\PM\Model\obj\Debug\Model.pdb
+C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\Model\bin\Debug\Model.dll
+C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\Model\bin\Debug\Model.pdb
+C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\Model\obj\Debug\Model.dll
+C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\Model\obj\Debug\Model.pdb
