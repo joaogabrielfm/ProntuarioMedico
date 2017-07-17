@@ -11,11 +11,9 @@ namespace DatabaseAccess
 {
     public class MedicamentoAccess : DBAccess
     {
-        //Constructor function
         public MedicamentoAccess(string connectionString) : base(connectionString) { }
 
-        //Esta funcao insere um laboratorista na base de dados
-        public void InsertLaboratorista(Medicamento newMedicamento)
+        public void InsertMedicamento(Medicamento newMedicamento)
         {
             string sSQL = "";
             sSQL += " INSERT INTO tbl_medicamento ";
@@ -36,11 +34,9 @@ namespace DatabaseAccess
             sqlparam = new SqlParameter("Principio_ativo", newMedicamento.principio_ativo);
             sqlcomm.Parameters.Add(sqlparam);
 
-            // Execute the query.
             ExecNonQuery(sqlcomm);
         }
 
-        //Esta funcao retorna todas as informações pessoais sobre um laboratorista
         public Medicamento GetMedicamento(string nro_registro)
         {
             string sSQL = "";
@@ -66,7 +62,6 @@ namespace DatabaseAccess
             return medicamento;
         }
 
-        // Essa funcao retorna a lista de todos os laboratoristas
         public List<Medicamento> GetAllMedicamentos()
         {
             string sql = "SELECT * FROM tbl_medicamento";
@@ -87,7 +82,6 @@ namespace DatabaseAccess
             return medicamentos;
         }
 
-        // Essa funcao é chamada para atualizar os dados de um laboratorista
         public void UpdateMedicamentos(Medicamento medicamento)
         {
             string sSQL = "";
@@ -110,8 +104,7 @@ namespace DatabaseAccess
 
             ExecNonQuery(sqlcomm);
         }
-
-        // Essa funcao deleta um laboratorista do banco de dados
+        
         public void DeleteMedicamento(string nro_registro)
         {
             string sSQL = "";
@@ -120,8 +113,7 @@ namespace DatabaseAccess
 
             SqlParameter sqlparam = new SqlParameter("Nro_registro", nro_registro);
             sqlcomm.Parameters.Add(sqlparam);
-
-            // Assign a value to the CommandText property.
+            
             sqlcomm.CommandText = sSQL;
 
             DataTable dt = new DataTable();
