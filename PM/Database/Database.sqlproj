@@ -94,6 +94,8 @@
     <Build Include="tbl_atendimentoCuidadorFormal.sql" />
     <Build Include="tbl_atendimentoMedico.sql" />
     <Build Include="tbl_eh_cuidado_por.sql" />
+    <Build Include="tbl_certificacao_Medica.sql" />
+    <Build Include="tbl_certificacaoCuidadorFormal.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Database.refactorlog" />

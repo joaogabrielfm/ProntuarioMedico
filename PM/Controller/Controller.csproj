@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrarFamiliarController.cs" />
     <Compile Include="RegistrarPacienteController.cs" />
     <Compile Include="RegistrarCuidadorFormalController.cs" />
     <Compile Include="RegistrarCuidadorInformalController.cs" />

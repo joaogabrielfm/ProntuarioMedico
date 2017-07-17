@@ -10,6 +10,7 @@
           <li><a href="registrarcuidadorinformal.aspx">Cuidador Informal</a></li>
           <li><a href="registrarlaboratorista.aspx">Laboratorista</a></li>
           <li><a href="registrarfarmaceutico.aspx">Farmaceutico</a></li>
+          <li><a href="registrarfamiliar.aspx">Familiar</a></li>
 
        </ul>
 

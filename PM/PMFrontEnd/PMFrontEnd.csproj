@@ -69,6 +69,7 @@
     <Content Include="packages.config" />
     <Content Include="MasterPage.Master" />
     <Content Include="default.aspx" />
+    <Content Include="RegistrarFamiliar.aspx" />
     <Content Include="RegistrarMedico.aspx" />
     <Content Include="css\extras.less" />
     <Content Include="RegistrarPaciente.aspx" />
@@ -101,6 +102,13 @@
     </Compile>
     <Compile Include="default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarFamiliar.aspx.cs">
+      <DependentUpon>RegistrarFamiliar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarFamiliar.aspx.designer.cs">
+      <DependentUpon>RegistrarFamiliar.aspx</DependentUpon>
     </Compile>
     <Compile Include="RegistrarMedico.aspx.cs">
       <DependentUpon>RegistrarMedico.aspx</DependentUpon>

@@ -439,6 +439,58 @@
 			</Relationship>
 			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="21" />
 		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_certificacaoCuidadorFormal_CuidadorFormal]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[tbl_certificacaoCuidadorFormal].[cpf_cuidadorFormal]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tbl_certificacaoCuidadorFormal]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[tbl_cuidador_formal].[CPF]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[tbl_cuidador_formal]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="22" />
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_certificacaoMedica_Medico]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[tbl_certificacao_Medica].[cpf_medico]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_certificacao_Medica].[crm_medico]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tbl_certificacao_Medica]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[tbl_medico].[CPF]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_medico].[CRM]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[tbl_medico]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="23" />
+		</Element>
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_dataAgenda_Agenda_Pessoa]">
 			<Relationship Name="Columns">
 				<Entry>
@@ -466,7 +518,7 @@
 					<References Name="[dbo].[tbl_agenda]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="22" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="24" />
 		</Element>
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_dataAgenda_Pessoa]">
 			<Relationship Name="Columns">
@@ -489,7 +541,7 @@
 					<References Name="[dbo].[tbl_pessoa]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="23" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="25" />
 		</Element>
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_ehCuidadoPor_CuidadorInformal]">
 			<Relationship Name="Columns">
@@ -512,7 +564,7 @@
 					<References Name="[dbo].[tbl_cuidador_informal]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="24" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="26" />
 		</Element>
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_ehCuidadoPor_Paciente]">
 			<Relationship Name="Columns">
@@ -535,7 +587,7 @@
 					<References Name="[dbo].[tbl_paciente]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="25" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="27" />
 		</Element>
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tbl_anamnese_pessoa_ToTable]">
 			<Relationship Name="Columns">
@@ -558,7 +610,7 @@
 					<References Name="[dbo].[tbl_pessoa]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="26" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="28" />
 		</Element>
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tbl_cuidador_formal_pessoa_ToTable]">
 			<Relationship Name="Columns">
@@ -581,7 +633,7 @@
 					<References Name="[dbo].[tbl_pessoa]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="27" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="29" />
 		</Element>
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tbl_cuidador_informal_pessoa_ToTable]">
 			<Relationship Name="Columns">
@@ -604,7 +656,7 @@
 					<References Name="[dbo].[tbl_pessoa]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="28" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="30" />
 		</Element>
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tbl_email_clinica_ToTable]">
 			<Relationship Name="Columns">
@@ -627,7 +679,7 @@
 					<References Name="[dbo].[tbl_clinica]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="29" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="31" />
 		</Element>
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tbl_email_farmacia_ToTable]">
 			<Relationship Name="Columns">
@@ -650,7 +702,7 @@
 					<References Name="[dbo].[tbl_farmacia]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="30" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="32" />
 		</Element>
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tbl_email_hospital_ToTable]">
 			<Relationship Name="Columns">
@@ -673,7 +725,7 @@
 					<References Name="[dbo].[tbl_hospital]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="31" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="33" />
 		</Element>
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tbl_email_laboratorio_ToTable]">
 			<Relationship Name="Columns">
@@ -696,7 +748,7 @@
 					<References Name="[dbo].[tbl_laboratorio]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="32" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="34" />
 		</Element>
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tbl_especializacao_laboratorista_ToTable]">
 			<Relationship Name="Columns">
@@ -719,7 +771,7 @@
 					<References Name="[dbo].[tbl_laboratorista]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="33" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="35" />
 		</Element>
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tbl_familiar_pessoa_ToTable]">
 			<Relationship Name="Columns">
@@ -742,7 +794,7 @@
 					<References Name="[dbo].[tbl_pessoa]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="34" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="36" />
 		</Element>
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tbl_farmaceutico_pessoa_ToTable]">
 			<Relationship Name="Columns">
@@ -765,7 +817,7 @@
 					<References Name="[dbo].[tbl_pessoa]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="35" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="37" />
 		</Element>
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tbl_horario_Med_ToTable]">
 			<Relationship Name="Columns">
@@ -788,7 +840,7 @@
 					<References Name="[dbo].[tbl_medicamento]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="36" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="38" />
 		</Element>
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tbl_laboratorista_laboratorio_ToTable]">
 			<Relationship Name="Columns">
@@ -811,7 +863,7 @@
 					<References Name="[dbo].[tbl_laboratorio]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="37" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="39" />
 		</Element>
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tbl_laboratorista_pessoa_ToTable]">
 			<Relationship Name="Columns">
@@ -834,7 +886,7 @@
 					<References Name="[dbo].[tbl_pessoa]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="38" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="40" />
 		</Element>
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tbl_medico_pessoa_ToTable]">
 			<Relationship Name="Columns">
@@ -857,7 +909,7 @@
 					<References Name="[dbo].[tbl_pessoa]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="39" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="41" />
 		</Element>
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tbl_paciente_pessoa_ToTable]">
 			<Relationship Name="Columns">
@@ -880,7 +932,7 @@
 					<References Name="[dbo].[tbl_pessoa]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="40" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="42" />
 		</Element>
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tbl_plano_saude_pessoa_ToTable]">
 			<Relationship Name="Columns">
@@ -903,7 +955,7 @@
 					<References Name="[dbo].[tbl_pessoa]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="41" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="43" />
 		</Element>
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tbl_telefone_clinica_ToTable]">
 			<Relationship Name="Columns">
@@ -926,7 +978,7 @@
 					<References Name="[dbo].[tbl_clinica]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="42" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="44" />
 		</Element>
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tbl_telefone_farmacia_ToTable]">
 			<Relationship Name="Columns">
@@ -949,7 +1001,7 @@
 					<References Name="[dbo].[tbl_farmacia]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="43" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="45" />
 		</Element>
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tbl_telefone_hospital_ToTable]">
 			<Relationship Name="Columns">
@@ -972,7 +1024,7 @@
 					<References Name="[dbo].[tbl_hospital]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="44" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="46" />
 		</Element>
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tbl_telefone_laboratorio_ToTable]">
 			<Relationship Name="Columns">
@@ -995,7 +1047,7 @@
 					<References Name="[dbo].[tbl_laboratorio]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="45" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="47" />
 		</Element>
 		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_tbl_telefone_pessoa_ToTable]">
 			<Relationship Name="Columns">
@@ -1018,7 +1070,7 @@
 					<References Name="[dbo].[tbl_pessoa]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="46" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="48" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_Agenda]">
 			<Relationship Name="ColumnSpecifications">
@@ -1046,7 +1098,7 @@
 					<References Name="[dbo].[tbl_agenda]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="47" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="49" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_atendimentMedico]">
 			<Relationship Name="ColumnSpecifications">
@@ -1083,7 +1135,7 @@
 					<References Name="[dbo].[tbl_atendimentoMedico]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="48" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="50" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_atendimentoCuidadorFormal]">
 			<Relationship Name="ColumnSpecifications">
@@ -1120,7 +1172,63 @@
 					<References Name="[dbo].[tbl_atendimentoCuidadorFormal]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="49" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="51" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_certificacaoCuidadorFormal]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tbl_certificacaoCuidadorFormal].[cpf_cuidadorFormal]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tbl_certificacaoCuidadorFormal].[id_certificado]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tbl_certificacaoCuidadorFormal]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="52" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_certificacaoMedica]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tbl_certificacao_Medica].[id_certificado]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[tbl_certificacao_Medica].[cpf_medico]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[tbl_certificacao_Medica]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="53" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_dataAgenda]">
 			<Relationship Name="ColumnSpecifications">
@@ -1157,7 +1265,7 @@
 					<References Name="[dbo].[tbl_data_agenda]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="50" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="54" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_horarioMedicamento]">
 			<Relationship Name="ColumnSpecifications">
@@ -1185,7 +1293,7 @@
 					<References Name="[dbo].[tbl_horario_atendimento]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="51" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="55" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_tbl_anamnese]">
 			<Relationship Name="ColumnSpecifications">
@@ -1213,7 +1321,7 @@
 					<References Name="[dbo].[tbl_anamnese]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="52" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="56" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_tbl_email_clinica]">
 			<Relationship Name="ColumnSpecifications">
@@ -1241,7 +1349,7 @@
 					<References Name="[dbo].[tbl_email_clinica]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="53" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="57" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_tbl_email_farmacia]">
 			<Relationship Name="ColumnSpecifications">
@@ -1269,7 +1377,7 @@
 					<References Name="[dbo].[tbl_email_farmacia]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="54" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="58" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_tbl_email_hospital]">
 			<Relationship Name="ColumnSpecifications">
@@ -1297,7 +1405,7 @@
 					<References Name="[dbo].[tbl_email_hospital]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="55" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="59" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_tbl_email_laboratorio]">
 			<Relationship Name="ColumnSpecifications">
@@ -1325,7 +1433,7 @@
 					<References Name="[dbo].[tbl_email_laboratorio]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="56" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="60" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_tbl_especializacao_laboratorista]">
 			<Relationship Name="ColumnSpecifications">
@@ -1353,7 +1461,7 @@
 					<References Name="[dbo].[tbl_especializacao_laboratorista]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="57" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="61" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_tbl_medico]">
 			<Relationship Name="ColumnSpecifications">
@@ -1381,7 +1489,7 @@
 					<References Name="[dbo].[tbl_medico]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="58" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="62" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_tbl_telefone_clinica]">
 			<Relationship Name="ColumnSpecifications">
@@ -1409,7 +1517,7 @@
 					<References Name="[dbo].[tbl_telefone_clinica]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="59" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="63" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_tbl_telefone_farmacia]">
 			<Relationship Name="ColumnSpecifications">
@@ -1437,7 +1545,7 @@
 					<References Name="[dbo].[tbl_telefone_farmacia]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="60" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="64" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_tbl_telefone_hospital]">
 			<Relationship Name="ColumnSpecifications">
@@ -1465,7 +1573,7 @@
 					<References Name="[dbo].[tbl_telefone_hospital]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="61" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="65" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_tbl_telefone_laboratorio]">
 			<Relationship Name="ColumnSpecifications">
@@ -1493,7 +1601,7 @@
 					<References Name="[dbo].[tbl_laboratorio_telefone]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="62" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="66" />
 		</Element>
 		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_tbl_telefone_pessoa]">
 			<Relationship Name="ColumnSpecifications">
@@ -1530,7 +1638,7 @@
 					<References Name="[dbo].[tbl_telefone_pessoa]" />
 				</Entry>
 			</Relationship>
-			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="63" />
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="67" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[tbl_agenda]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -1575,7 +1683,7 @@
 				</Entry>
 			</Relationship>
 			<AttachedAnnotation Disambiguator="17" />
-			<AttachedAnnotation Disambiguator="47" />
+			<AttachedAnnotation Disambiguator="49" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[tbl_anamnese]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -1619,8 +1727,8 @@
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
-			<AttachedAnnotation Disambiguator="26" />
-			<AttachedAnnotation Disambiguator="52" />
+			<AttachedAnnotation Disambiguator="28" />
+			<AttachedAnnotation Disambiguator="56" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[tbl_atendimentoCuidadorFormal]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -1683,7 +1791,7 @@
 			</Relationship>
 			<AttachedAnnotation Disambiguator="19" />
 			<AttachedAnnotation Disambiguator="18" />
-			<AttachedAnnotation Disambiguator="49" />
+			<AttachedAnnotation Disambiguator="51" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[tbl_atendimentoMedico]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -1779,7 +1887,216 @@
 			</Relationship>
 			<AttachedAnnotation Disambiguator="21" />
 			<AttachedAnnotation Disambiguator="20" />
-			<AttachedAnnotation Disambiguator="48" />
+			<AttachedAnnotation Disambiguator="50" />
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[tbl_certificacao_Medica]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tbl_certificacao_Medica].[id_certificado]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tbl_certificacao_Medica].[nome_curso]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tbl_certificacao_Medica].[grau_certificado]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tbl_certificacao_Medica].[universidade]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="50" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tbl_certificacao_Medica].[cpf_medico]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="14" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tbl_certificacao_Medica].[crm_medico]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="7" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="23" />
+			<AttachedAnnotation Disambiguator="53" />
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[tbl_certificacaoCuidadorFormal]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tbl_certificacaoCuidadorFormal].[id_certificado]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tbl_certificacaoCuidadorFormal].[cpf_cuidadorFormal]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="14" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tbl_certificacaoCuidadorFormal].[nome_curso]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="25" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tbl_certificacaoCuidadorFormal].[grau_certificado]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="25" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[tbl_certificacaoCuidadorFormal].[universidade]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="25" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[varchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="22" />
+			<AttachedAnnotation Disambiguator="52" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[tbl_clinica]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -1921,7 +2238,7 @@
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
-			<AttachedAnnotation Disambiguator="27" />
+			<AttachedAnnotation Disambiguator="29" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[tbl_cuidador_informal]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -1950,7 +2267,7 @@
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
-			<AttachedAnnotation Disambiguator="28" />
+			<AttachedAnnotation Disambiguator="30" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[tbl_data_agenda]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -2010,15 +2327,16 @@
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
-			<AttachedAnnotation Disambiguator="23" />
-			<AttachedAnnotation Disambiguator="22" />
-			<AttachedAnnotation Disambiguator="50" />
+			<AttachedAnnotation Disambiguator="25" />
+			<AttachedAnnotation Disambiguator="24" />
+			<AttachedAnnotation Disambiguator="54" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[tbl_eh_cuidado_por]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
 			<Relationship Name="Columns">
 				<Entry>
 					<Element Type="SqlSimpleColumn" Name="[dbo].[tbl_eh_cuidado_por].[CPF_paciente]">
+						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2035,6 +2353,7 @@
 				</Entry>
 				<Entry>
 					<Element Type="SqlSimpleColumn" Name="[dbo].[tbl_eh_cuidado_por].[CPF_cuidadorInformal]">
+						<Property Name="IsNullable" Value="False" />
 						<Relationship Name="TypeSpecifier">
 							<Entry>
 								<Element Type="SqlTypeSpecifier">
@@ -2055,8 +2374,8 @@
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
-			<AttachedAnnotation Disambiguator="25" />
-			<AttachedAnnotation Disambiguator="24" />
+			<AttachedAnnotation Disambiguator="27" />
+			<AttachedAnnotation Disambiguator="26" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[tbl_email_clinica]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -2101,8 +2420,8 @@
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
-			<AttachedAnnotation Disambiguator="29" />
-			<AttachedAnnotation Disambiguator="53" />
+			<AttachedAnnotation Disambiguator="31" />
+			<AttachedAnnotation Disambiguator="57" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[tbl_email_farmacia]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -2147,8 +2466,8 @@
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
-			<AttachedAnnotation Disambiguator="30" />
-			<AttachedAnnotation Disambiguator="54" />
+			<AttachedAnnotation Disambiguator="32" />
+			<AttachedAnnotation Disambiguator="58" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[tbl_email_hospital]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -2193,8 +2512,8 @@
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
-			<AttachedAnnotation Disambiguator="31" />
-			<AttachedAnnotation Disambiguator="55" />
+			<AttachedAnnotation Disambiguator="33" />
+			<AttachedAnnotation Disambiguator="59" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[tbl_email_laboratorio]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -2239,8 +2558,8 @@
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
-			<AttachedAnnotation Disambiguator="32" />
-			<AttachedAnnotation Disambiguator="56" />
+			<AttachedAnnotation Disambiguator="34" />
+			<AttachedAnnotation Disambiguator="60" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[tbl_especializacao_laboratorista]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -2285,8 +2604,8 @@
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
-			<AttachedAnnotation Disambiguator="33" />
-			<AttachedAnnotation Disambiguator="57" />
+			<AttachedAnnotation Disambiguator="35" />
+			<AttachedAnnotation Disambiguator="61" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[tbl_exame]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -2357,7 +2676,7 @@
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
-			<AttachedAnnotation Disambiguator="34" />
+			<AttachedAnnotation Disambiguator="36" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[tbl_farmaceutico]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -2386,7 +2705,7 @@
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
-			<AttachedAnnotation Disambiguator="35" />
+			<AttachedAnnotation Disambiguator="37" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[tbl_farmacia]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -2560,8 +2879,8 @@
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
-			<AttachedAnnotation Disambiguator="36" />
-			<AttachedAnnotation Disambiguator="51" />
+			<AttachedAnnotation Disambiguator="38" />
+			<AttachedAnnotation Disambiguator="55" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[tbl_hospital]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -2865,8 +3184,8 @@
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
-			<AttachedAnnotation Disambiguator="45" />
-			<AttachedAnnotation Disambiguator="62" />
+			<AttachedAnnotation Disambiguator="47" />
+			<AttachedAnnotation Disambiguator="66" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[tbl_laboratorista]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -2912,8 +3231,8 @@
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
-			<AttachedAnnotation Disambiguator="38" />
-			<AttachedAnnotation Disambiguator="37" />
+			<AttachedAnnotation Disambiguator="40" />
+			<AttachedAnnotation Disambiguator="39" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[tbl_medicamento]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -3036,8 +3355,8 @@
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
-			<AttachedAnnotation Disambiguator="39" />
-			<AttachedAnnotation Disambiguator="58" />
+			<AttachedAnnotation Disambiguator="41" />
+			<AttachedAnnotation Disambiguator="62" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[tbl_paciente]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -3066,7 +3385,7 @@
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
-			<AttachedAnnotation Disambiguator="40" />
+			<AttachedAnnotation Disambiguator="42" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[tbl_pessoa]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -3390,7 +3709,7 @@
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
-			<AttachedAnnotation Disambiguator="41" />
+			<AttachedAnnotation Disambiguator="43" />
 			<AttachedAnnotation Disambiguator="8" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[tbl_telefone_clinica]">
@@ -3453,8 +3772,8 @@
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
-			<AttachedAnnotation Disambiguator="42" />
-			<AttachedAnnotation Disambiguator="59" />
+			<AttachedAnnotation Disambiguator="44" />
+			<AttachedAnnotation Disambiguator="63" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[tbl_telefone_farmacia]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -3516,8 +3835,8 @@
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
-			<AttachedAnnotation Disambiguator="43" />
-			<AttachedAnnotation Disambiguator="60" />
+			<AttachedAnnotation Disambiguator="45" />
+			<AttachedAnnotation Disambiguator="64" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[tbl_telefone_hospital]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -3579,8 +3898,8 @@
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
-			<AttachedAnnotation Disambiguator="44" />
-			<AttachedAnnotation Disambiguator="61" />
+			<AttachedAnnotation Disambiguator="46" />
+			<AttachedAnnotation Disambiguator="65" />
 		</Element>
 		<Element Type="SqlTable" Name="[dbo].[tbl_telefone_pessoa]">
 			<Property Name="IsAnsiNullsOn" Value="True" />
@@ -3641,8 +3960,8 @@
 					<References ExternalSource="BuiltIns" Name="[dbo]" />
 				</Entry>
 			</Relationship>
-			<AttachedAnnotation Disambiguator="46" />
-			<AttachedAnnotation Disambiguator="63" />
+			<AttachedAnnotation Disambiguator="48" />
+			<AttachedAnnotation Disambiguator="67" />
 		</Element>
 		<Element Type="SqlView" Name="[dbo].[v_classe_estabelecimento]">
 			<Property Name="QueryScript">
