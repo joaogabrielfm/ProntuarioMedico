@@ -71,6 +71,11 @@
     <Content Include="default.aspx" />
     <Content Include="RegistrarMedico.aspx" />
     <Content Include="css\extras.less" />
+    <Content Include="RegistrarPaciente.aspx" />
+    <Content Include="RegistrarFarmaceutico.aspx" />
+    <Content Include="RegistrarCuidadorFormal.aspx" />
+    <Content Include="RegistrarCuidadorInformal.aspx" />
+    <Content Include="RegistrarLaboratorista.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -103,6 +108,41 @@
     </Compile>
     <Compile Include="RegistrarMedico.aspx.designer.cs">
       <DependentUpon>RegistrarMedico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarPaciente.aspx.cs">
+      <DependentUpon>RegistrarPaciente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarPaciente.aspx.designer.cs">
+      <DependentUpon>RegistrarPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarFarmaceutico.aspx.cs">
+      <DependentUpon>RegistrarFarmaceutico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarFarmaceutico.aspx.designer.cs">
+      <DependentUpon>RegistrarFarmaceutico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarCuidadorFormal.aspx.cs">
+      <DependentUpon>RegistrarCuidadorFormal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarCuidadorFormal.aspx.designer.cs">
+      <DependentUpon>RegistrarCuidadorFormal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarCuidadorInformal.aspx.cs">
+      <DependentUpon>RegistrarCuidadorInformal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarCuidadorInformal.aspx.designer.cs">
+      <DependentUpon>RegistrarCuidadorInformal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarLaboratorista.aspx.cs">
+      <DependentUpon>RegistrarLaboratorista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarLaboratorista.aspx.designer.cs">
+      <DependentUpon>RegistrarLaboratorista.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

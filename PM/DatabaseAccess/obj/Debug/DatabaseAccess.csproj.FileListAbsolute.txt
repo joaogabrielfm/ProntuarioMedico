@@ -1,10 +1,3 @@
-C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\DatabaseAccess\obj\Debug\DatabaseAccess.csprojResolveAssemblyReference.cache
-C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\DatabaseAccess\bin\Debug\DatabaseAccess.dll
-C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\DatabaseAccess\bin\Debug\DatabaseAccess.pdb
-C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\DatabaseAccess\bin\Debug\Model.dll
-C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\DatabaseAccess\bin\Debug\Model.pdb
-C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\DatabaseAccess\obj\Debug\DatabaseAccess.dll
-C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\DatabaseAccess\obj\Debug\DatabaseAccess.pdb
 C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\DatabaseAccess\bin\Debug\DatabaseAccess.dll
 C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\DatabaseAccess\bin\Debug\DatabaseAccess.pdb
 C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\DatabaseAccess\bin\Debug\Model.dll
@@ -12,3 +5,10 @@ C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\DatabaseAccess\bin
 C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\DatabaseAccess\obj\Debug\DatabaseAccess.csprojResolveAssemblyReference.cache
 C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\DatabaseAccess\obj\Debug\DatabaseAccess.dll
 C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\DatabaseAccess\obj\Debug\DatabaseAccess.pdb
+C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\DatabaseAccess\bin\Debug\DatabaseAccess.dll
+C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\DatabaseAccess\bin\Debug\DatabaseAccess.pdb
+C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\DatabaseAccess\bin\Debug\Model.dll
+C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\DatabaseAccess\bin\Debug\Model.pdb
+C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\DatabaseAccess\obj\Debug\DatabaseAccess.csprojResolveAssemblyReference.cache
+C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\DatabaseAccess\obj\Debug\DatabaseAccess.dll
+C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\DatabaseAccess\obj\Debug\DatabaseAccess.pdb

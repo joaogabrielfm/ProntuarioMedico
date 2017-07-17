@@ -34,6 +34,28 @@ namespace DatabaseAccess
             ExecNonQuery(sqlcomm);
         }
 
+        public bool VerificaLaboratorista(string cpf)
+        {
+            string sSQL = "";
+            sSQL += " SELECT COUNT(*) from tbl_laboratorista WHERE CPF = @cpf;";
+            SqlCommand sqlcomm = new SqlCommand();
+
+            sqlcomm.CommandText = sSQL;
+
+            SqlParameter sqlparam = new SqlParameter("cpf", cpf);
+            sqlcomm.Parameters.Add(sqlparam);
+
+            int count = (int)ExecScalar(sqlcomm);
+            if (count == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         //Esta funcao retorna todas as informações pessoais sobre um laboratorista
         public Laboratorista GetLaboratorista(string cpf)
         {
