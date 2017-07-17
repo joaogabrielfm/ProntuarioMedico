@@ -19,3 +19,10 @@ C:\Users\guilh\Source\Repos\ProntuarioMedico\PM\DatabaseAccess\bin\Debug\Model.p
 C:\Users\guilh\Source\Repos\ProntuarioMedico\PM\DatabaseAccess\obj\Debug\DatabaseAccess.csprojResolveAssemblyReference.cache
 C:\Users\guilh\Source\Repos\ProntuarioMedico\PM\DatabaseAccess\obj\Debug\DatabaseAccess.dll
 C:\Users\guilh\Source\Repos\ProntuarioMedico\PM\DatabaseAccess\obj\Debug\DatabaseAccess.pdb
+C:\Users\admin\Documents\ProntuarioMedico\PM\DatabaseAccess\bin\Debug\DatabaseAccess.dll
+C:\Users\admin\Documents\ProntuarioMedico\PM\DatabaseAccess\bin\Debug\DatabaseAccess.pdb
+C:\Users\admin\Documents\ProntuarioMedico\PM\DatabaseAccess\bin\Debug\Model.dll
+C:\Users\admin\Documents\ProntuarioMedico\PM\DatabaseAccess\bin\Debug\Model.pdb
+C:\Users\admin\Documents\ProntuarioMedico\PM\DatabaseAccess\obj\Debug\DatabaseAccess.csprojResolveAssemblyReference.cache
+C:\Users\admin\Documents\ProntuarioMedico\PM\DatabaseAccess\obj\Debug\DatabaseAccess.dll
+C:\Users\admin\Documents\ProntuarioMedico\PM\DatabaseAccess\obj\Debug\DatabaseAccess.pdb

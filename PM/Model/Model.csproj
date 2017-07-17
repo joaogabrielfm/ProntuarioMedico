@@ -40,10 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Agenda.cs" />
     <Compile Include="Anamnese.cs" />
     <Compile Include="Clinica.cs" />
     <Compile Include="CuidadorFormal.cs" />
     <Compile Include="CuidadorInformal.cs" />
+    <Compile Include="DataAgenda.cs" />
     <Compile Include="Exame.cs" />
     <Compile Include="Familiar.cs" />
     <Compile Include="Farmaceutico.cs" />
