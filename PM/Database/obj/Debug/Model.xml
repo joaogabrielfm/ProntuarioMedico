@@ -2880,5 +2880,215 @@
 			<AttachedAnnotation Disambiguator="36" />
 			<AttachedAnnotation Disambiguator="48" />
 		</Element>
+		<Element Type="SqlView" Name="[dbo].[v_classe_estabelecimento]">
+			<Property Name="QueryScript">
+				<Value><![CDATA[ SELECT CNPJ, 'H' as tipo FROM [tbl_hospital] 
+	UNION SELECT CNPJ, 'L' as tipo FROM [tbl_laboratorio] 
+	UNION SELECT CNPJ, 'C' as tipo FROM [tbl_clinica]
+	UNION SELECT CNPJ, 'F' as tipo FROM [tbl_email_farmacia]]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[dbo].[v_classe_estabelecimento].[CNPJ]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[dbo].[tbl_hospital].[CNPJ]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[dbo].[v_classe_estabelecimento].[tipo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="QueryDependencies">
+				<Entry>
+					<References Name="[dbo].[tbl_hospital]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_hospital].[CNPJ]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_laboratorio]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_laboratorio].[CNPJ]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_clinica]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_clinica].[CNPJ]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_email_farmacia]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_email_farmacia].[CNPJ]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="263" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE VIEW [dbo].[v_classe_estabelecimento]&#xD;&#xA;&#x9;AS" />
+			</Annotation>
+		</Element>
+		<Element Type="SqlView" Name="[dbo].[v_classe_pessoas]">
+			<Property Name="QueryScript">
+				<Value><![CDATA[ SELECT Prenome, Sobrenome, tbl_medico.CPF, 'M' as tipo FROM [tbl_medico],[tbl_pessoa] WHERE tbl_pessoa.CPF = tbl_medico.CPF 
+	UNION SELECT Prenome, Sobrenome, tbl_paciente.CPF, 'P' FROM [tbl_paciente],[tbl_pessoa] WHERE tbl_pessoa.CPF = tbl_paciente.CPF
+	UNION SELECT Prenome, Sobrenome, tbl_cuidador_formal.CPF, 'CF' FROM [tbl_cuidador_formal],[tbl_pessoa] WHERE tbl_pessoa.CPF = tbl_cuidador_formal.CPF
+	UNION SELECT Prenome, Sobrenome, tbl_cuidador_informal.CPF, 'CI' FROM [tbl_cuidador_informal],[tbl_pessoa] WHERE tbl_pessoa.CPF = tbl_cuidador_informal.CPF
+	UNION SELECT Prenome, Sobrenome, tbl_farmaceutico.CPF, 'F' FROM [tbl_farmaceutico],[tbl_pessoa] WHERE tbl_pessoa.CPF = tbl_farmaceutico.CPF
+	UNION SELECT Prenome, Sobrenome, tbl_laboratorista.CPF, 'L' FROM [tbl_laboratorista],[tbl_pessoa] WHERE tbl_pessoa.CPF = tbl_laboratorista.CPF]]></Value>
+			</Property>
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[dbo].[v_classe_pessoas].[Prenome]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[dbo].[tbl_pessoa].[Prenome]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[dbo].[v_classe_pessoas].[Sobrenome]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[dbo].[tbl_pessoa].[Sobrenome]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[dbo].[v_classe_pessoas].[CPF]">
+						<Relationship Name="ExpressionDependencies">
+							<Entry>
+								<References Name="[dbo].[tbl_medico].[CPF]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlComputedColumn" Name="[dbo].[v_classe_pessoas].[tipo]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="QueryDependencies">
+				<Entry>
+					<References Name="[dbo].[tbl_medico]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_pessoa]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_pessoa].[Prenome]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_pessoa].[Sobrenome]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_medico].[CPF]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_pessoa].[CPF]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_paciente]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_pessoa].[Prenome]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_pessoa].[Sobrenome]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_paciente].[CPF]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_pessoa].[CPF]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_cuidador_formal]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_pessoa].[Prenome]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_pessoa].[Sobrenome]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_cuidador_formal].[CPF]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_pessoa].[CPF]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_cuidador_informal]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_pessoa].[Prenome]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_pessoa].[Sobrenome]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_cuidador_informal].[CPF]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_pessoa].[CPF]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_farmaceutico]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_pessoa].[Prenome]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_pessoa].[Sobrenome]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_farmaceutico].[CPF]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_pessoa].[CPF]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_laboratorista]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_pessoa].[Prenome]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_pessoa].[Sobrenome]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_laboratorista].[CPF]" />
+				</Entry>
+				<Entry>
+					<References Name="[dbo].[tbl_pessoa].[CPF]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SysCommentsObjectAnnotation">
+				<Property Name="Length" Value="894" />
+				<Property Name="StartLine" Value="1" />
+				<Property Name="StartColumn" Value="1" />
+				<Property Name="HeaderContents" Value="CREATE VIEW [dbo].[v_classe_pessoas]&#xD;&#xA;&#x9;AS" />
+				<Property Name="FooterContents" Value=";" />
+			</Annotation>
+		</Element>
 	</Model>
 </DataSchemaModel>
