@@ -93,6 +93,7 @@
     <Build Include="tbl_data_agenda.sql" />
     <Build Include="tbl_atendimentoCuidadorFormal.sql" />
     <Build Include="tbl_atendimentoMedico.sql" />
+    <Build Include="tbl_eh_cuidado_por.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Database.refactorlog" />
