@@ -8,7 +8,7 @@ namespace Model
 {
     public class Anamnese
     {
-        public DateTime Data_hora { get; set; }
-        public string resultado { get; set; }
+        public string cpf { get; set; }
+        public int idAnamnese { get; set; }
     }
 }

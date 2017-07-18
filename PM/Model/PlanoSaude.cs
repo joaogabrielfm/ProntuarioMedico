@@ -8,14 +8,15 @@ namespace Model
 {
     public class PlanoSaude
     {
-        public int CodPlano { get; set; }
-        public DateTime Data_contratacao { get; set; }
-        public string Nome_operadora { get; set; }
-        public float Valor_atualizado { get; set; }
-        public DateTime Carencia { get; set; }
-        public DateTime Data_reajuste { get; set; }
-        public string Tipo_plano { get; set; }
-        public float Valor_mensal { get; set; }
-        public string Nome { get; set; }
+        public string cpf { get; set; }
+        public int codPlano { get; set; }
+        public DateTime dataContratacao { get; set; }
+        public string nomeOperadora { get; set; }
+        public float valorAtualizado { get; set; }
+        public DateTime carencia { get; set; }//arrumar aqui
+        public DateTime dataReajuste { get; set; } // arrumar aqui
+        public string tipoPlano { get; set; }
+        public float valorMensal { get; set; }
+        public string nome { get; set; }
     }
 }

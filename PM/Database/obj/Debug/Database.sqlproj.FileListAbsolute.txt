@@ -25,3 +25,8 @@ C:\Users\admin\Documents\ProntuarioMedico\PM\Database\obj\Debug\postdeploy.sql
 C:\Users\admin\Documents\ProntuarioMedico\PM\Database\obj\Debug\predeploy.sql
 C:\Users\admin\Documents\ProntuarioMedico\PM\Database\obj\Debug\Database.dll
 C:\Users\admin\Documents\ProntuarioMedico\PM\Database\obj\Debug\Database.pdb
+C:\Users\victo\Desktop\TrabalhoLabBD\ProntuarioMedico\PM\Database\bin\Debug\Database.dacpac
+C:\Users\victo\Desktop\TrabalhoLabBD\ProntuarioMedico\PM\Database\bin\Debug\Database.dll
+C:\Users\victo\Desktop\TrabalhoLabBD\ProntuarioMedico\PM\Database\bin\Debug\Database.pdb
+C:\Users\victo\Desktop\TrabalhoLabBD\ProntuarioMedico\PM\Database\obj\Debug\Database.dll
+C:\Users\victo\Desktop\TrabalhoLabBD\ProntuarioMedico\PM\Database\obj\Debug\Database.pdb

@@ -13,54 +13,38 @@ namespace DatabaseAccess
     {
         //Constructor function
         public AnamneseAccess(string connectionString) : base(connectionString) { }
-        /*
+        
         //Esta funcao insere uma anamnese na base de dados
-        public void InsertAnamnese(string CPF, int Id_anamnese)
+        public void InsertAnamnese(Anamnese anamnese)
         {
             string sSQL = "";
             sSQL += " INSERT INTO tbl_anamnese ";
-            sSQL += " (CPF, Id_anamnese) ";
+            sSQL += " (CPF, IdAnamnese) ";
             sSQL += " Values ";
             sSQL += " (@CPF, @Id_anamnese) ";
             SqlCommand sqlcomm = new SqlCommand();
             sqlcomm.CommandText = sSQL;
-            SqlParameter sqlparam = new SqlParameter("CPF", CPF);
+            SqlParameter sqlparam = new SqlParameter("CPF", anamnese.cpf);
             sqlcomm.Parameters.Add(sqlparam);
 
-            sqlparam = new SqlParameter("Id_anamnese", Id_anamnese);
+            sqlparam = new SqlParameter("Id_anamnese", anamnese.idAnamnese);
             sqlcomm.Parameters.Add(sqlparam);
 
             // Execute the query.
             ExecNonQuery(sqlcomm);
         }
 
-        // Essa funcao retorna a anamnese de um paciente
-        public Anamnese GetAnamnese(string cpf)
-        {
-            string sql = "SELECT * FROM tbl_anamnese, tbl_questao_anamnese WHERE tbl_anamnese.CPF = @CPF AND tbl_questao_anamnese.CPF = @CPF;";
-            SqlCommand sqlcomm = new SqlCommand();
-            sqlcomm.CommandText = sql;
-
-            DataTable dt = ExecReader(sqlcomm);
-            List<string> especializacao_laboratoristas = new List<string>();
-            foreach (DataRow dr in dt.Rows)
-            {
-                especializacao_laboratoristas.Add(dr["Especializacao"].ToString());
-            }
-            return especializacao_laboratoristas;
-        }
-
-        // Essa funcao deleta uma especializacao de um laboratorista do banco de dados
-        public void DeleteEspecializacaoLaboratorista(string cpf, string especializacao)
+        // Essa funcao deleta uma anamnese do banco de dados
+        public void DeleteEspecializacaoLaboratorista(Anamnese anamnese)
         {
             string sSQL = "";
-            sSQL += " DELETE FROM tbl_especializacao_laboratorista WHERE CPF = @CPF AND Especializacao = @especializacao ;";
+            sSQL += " DELETE FROM tbl_anamnese WHERE CPF = @CPF AND IdAnamnese= @Id_anamnese;";
             SqlCommand sqlcomm = new SqlCommand();
 
-            SqlParameter sqlparam = new SqlParameter("CPF", cpf);
+            SqlParameter sqlparam = new SqlParameter("CPF", anamnese.cpf);
             sqlcomm.Parameters.Add(sqlparam);
 
-            sqlparam = new SqlParameter("Especializacao", especializacao);
+            sqlparam = new SqlParameter("Id_anamnese", anamnese.idAnamnese);
             sqlcomm.Parameters.Add(sqlparam);
 
             // Assign a value to the CommandText property.
@@ -69,7 +53,6 @@ namespace DatabaseAccess
             DataTable dt = new DataTable();
             dt = ExecReader(sqlcomm);
         }
-        */
     }
 }
 

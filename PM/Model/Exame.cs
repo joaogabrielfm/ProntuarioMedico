@@ -8,7 +8,7 @@ namespace Model
 {
     public class Exame
     {
-        public DateTime Data_hora { get; set; }
-        public string Resultado { get; set; }
+        public DateTime dataHora { get; set; }
+        public string resultado { get; set; }
     }
 }
