@@ -70,6 +70,7 @@
     <Content Include="MasterPage.Master" />
     <Content Include="default.aspx" />
     <Content Include="RegistrarFamiliar.aspx" />
+    <Content Include="RegistrarMedicamento.aspx" />
     <Content Include="RegistrarMedico.aspx" />
     <Content Include="css\extras.less" />
     <Content Include="RegistrarPaciente.aspx" />
@@ -109,6 +110,13 @@
     </Compile>
     <Compile Include="RegistrarFamiliar.aspx.designer.cs">
       <DependentUpon>RegistrarFamiliar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarMedicamento.aspx.cs">
+      <DependentUpon>RegistrarMedicamento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarMedicamento.aspx.designer.cs">
+      <DependentUpon>RegistrarMedicamento.aspx</DependentUpon>
     </Compile>
     <Compile Include="RegistrarMedico.aspx.cs">
       <DependentUpon>RegistrarMedico.aspx</DependentUpon>

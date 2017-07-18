@@ -46,6 +46,7 @@
     <Compile Include="CuidadorFormal.cs" />
     <Compile Include="CuidadorInformal.cs" />
     <Compile Include="DataAgenda.cs" />
+    <Compile Include="Email.cs" />
     <Compile Include="Exame.cs" />
     <Compile Include="Familiar.cs" />
     <Compile Include="Farmaceutico.cs" />
