@@ -66,6 +66,7 @@
     <Compile Include="PacienteAccess.cs" />
     <Compile Include="PessoaAccess.cs" />
     <Compile Include="PlanoSaudeAccess.cs" />
+    <Compile Include="ProgressAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuestaoAnamneseAccess.cs" />
     <Compile Include="RelativoaAccess.cs" />
