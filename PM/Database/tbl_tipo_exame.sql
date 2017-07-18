@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[tbl_tipo_exame]
 (
 	[data_hora] datetime,
-	[id_tipo_exame] int,
+	[id_tipo_exame] int IDENTITY(1,1),
 	[tipo] varchar(100),
 	[descricao] varchar(100),
 	CONSTRAINT FK_TipoExame_Exame FOREIGN KEY ([data_hora]) 
