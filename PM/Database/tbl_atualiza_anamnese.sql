@@ -7,3 +7,6 @@
     CONSTRAINT [FK_atualizaAnamnese_medico] FOREIGN KEY ([CPF_medico]) REFERENCES [tbl_medico]([CPF]),
     CONSTRAINT [PK_atualiza_anamnese] PRIMARY KEY ([CPF], [Id_anamnese], [CPF_medico])
 )
+
+
+

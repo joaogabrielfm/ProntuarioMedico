@@ -6,3 +6,4 @@
 	CONSTRAINT [FK_questaoAnamnese_anamnese] FOREIGN KEY ([CPF], [Id_anamnese]) REFERENCES [tbl_anamnese]([CPF], [Id_anamnese]),
 	CONSTRAINT [PK_questao_anamnese] PRIMARY KEY ([Id_anamnese])
 )
+
