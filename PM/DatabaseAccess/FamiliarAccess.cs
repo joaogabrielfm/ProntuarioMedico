@@ -139,6 +139,28 @@ namespace DatabaseAccess
             dt = ExecReader(sqlcomm);
         }
 
+        public bool verificaFamiliar(string cpf)
+        {
+            string sSQL = "";
+            sSQL += " SELECT COUNT(*) from tbl_familiar WHERE CPF = @cpf;";
+            SqlCommand sqlcomm = new SqlCommand();
+
+            sqlcomm.CommandText = sSQL;
+
+            SqlParameter sqlparam = new SqlParameter("cpf", cpf);
+            sqlcomm.Parameters.Add(sqlparam);
+
+            int count = (int)ExecScalar(sqlcomm);
+            if (count == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
     }
 }
 

@@ -1,0 +1,12 @@
+7/17/2017 3:08:26 AM	This log contains information about the import operation of the script 'tbl_horario_medicamento.sql' into project 'Database' on computer 'ADMIN-PC' by user'admin.
+7/17/2017 3:08:26 AM	Started importing file: C:\Users\admin\Documents\PM\Database\tbl_horario_medicamento.sql 
+7/17/2017 3:08:26 AM	File name C:\Users\admin\Documents\PM\Database\tbl_horario_medicamento.sql (size: 313)
+7/17/2017 3:08:26 AM	Parsing import script
+7/17/2017 3:08:26 AM	Total number of batches in script: 1
+7/17/2017 3:08:26 AM	Total number of statements in script: 1
+7/17/2017 3:08:26 AM	The script was successfully imported into the project.
+7/17/2017 3:08:26 AM	Analyzing schema objects...
+7/17/2017 3:08:26 AM	Scanning project for duplicate elements
+7/17/2017 3:08:26 AM	Finished duplicate element processing
+7/17/2017 3:08:26 AM	A summary of the import was saved to the following location: C:\Users\admin\Documents\ProntuarioMedico\PM\Database\Import Script Logs\tbl_horario_medicame_20170717060826.log
+7/17/2017 3:08:26 AM	Click Finish to continue...
