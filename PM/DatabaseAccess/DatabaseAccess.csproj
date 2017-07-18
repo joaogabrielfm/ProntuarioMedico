@@ -47,8 +47,13 @@
     <Compile Include="CuidadorInformalAccess.cs" />
     <Compile Include="DataAgendaAccess.cs" />
     <Compile Include="DBAccess.cs" />
+    <Compile Include="EmailClinicaAccess.cs" />
+    <Compile Include="EmailFarmaciaAccess.cs" />
+    <Compile Include="EmailHospitalAccess.cs" />
+    <Compile Include="EmailLaboratorioAccess.cs" />
     <Compile Include="EspecializacaoLaboratoristaAccess.cs" />
     <Compile Include="ExameAccess.cs" />
+    <Compile Include="exameHabilitadoAccess.cs" />
     <Compile Include="FamiliarAccess.cs" />
     <Compile Include="FarmaceuticoAccess.cs" />
     <Compile Include="FarmaciaAccess.cs" />
@@ -62,6 +67,7 @@
     <Compile Include="PessoaAccess.cs" />
     <Compile Include="PlanoSaudeAccess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuestaoAnamneseAccess.cs" />
     <Compile Include="RelativoaAccess.cs" />
     <Compile Include="TelefoneClinicaAccess.cs" />
     <Compile Include="TelefoneFarmaciaAccess.cs" />

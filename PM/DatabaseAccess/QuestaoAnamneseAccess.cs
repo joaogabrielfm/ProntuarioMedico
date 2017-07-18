@@ -13,7 +13,7 @@ namespace DatabaseAccess
 	{
 		//Construtor função
 		public QuestaoAnamneseAccess(string connectionString) : base(connectionString){ }
-
+        /*
 		//Função que insere nova anamnese na base de dados
 		public void InsertQuestaoAnamnese(Questao_anamnese newQuestaoAnamnese)
 		{
@@ -61,7 +61,7 @@ namespace DatabaseAccess
 			questao_anamnese.resposta = dr["Resposta"].ToString();
 
 			return questao_anamnese;
-		}
+		}*/
 	}
 } 
 

@@ -13,7 +13,7 @@ namespace DatabaseAccess
 	{
 		// Constructor function
 		public exameHabilitadoPlanoAccess(string connectionString) : base(connectionString){ }
-		
+	/*	
 		// Funcao para inserir um exame habilitado na base de dados
 		public void InsertExameHabilitado(exame_habilitado_plano newExameHabilitadoPlano)
 		{
@@ -73,6 +73,6 @@ namespace DatabaseAccess
 			exameHabilitadoPlano.exame_habilitado = dr["Exame"].ToString();
 
 			return exameHabilitadoPlano;
-		}	
+		}	*/
 	}
 }
