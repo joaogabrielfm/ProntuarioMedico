@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].[tbl_exame]
 (
-	[data_hora] DATETIME NOT NULL PRIMARY KEY, 
-    [resultado] TEXT NULL
+	[DataHora] DATETIME NOT NULL PRIMARY KEY, 
+    [Resultado] VARCHAR(50) NOT NULL
 )

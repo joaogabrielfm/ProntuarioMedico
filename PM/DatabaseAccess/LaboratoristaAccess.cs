@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DatabaseAccess
 {
-    class LaboratoristaAccess : DBAccess
+    public class LaboratoristaAccess : DBAccess
     {
         //Constructor function
         public LaboratoristaAccess(string connectionString) : base(connectionString) { }
@@ -32,6 +32,28 @@ namespace DatabaseAccess
 
             // Execute the query.
             ExecNonQuery(sqlcomm);
+        }
+
+        public bool VerificaLaboratorista(string cpf)
+        {
+            string sSQL = "";
+            sSQL += " SELECT COUNT(*) from tbl_laboratorista WHERE CPF = @cpf;";
+            SqlCommand sqlcomm = new SqlCommand();
+
+            sqlcomm.CommandText = sSQL;
+
+            SqlParameter sqlparam = new SqlParameter("cpf", cpf);
+            sqlcomm.Parameters.Add(sqlparam);
+
+            int count = (int)ExecScalar(sqlcomm);
+            if (count == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         //Esta funcao retorna todas as informações pessoais sobre um laboratorista

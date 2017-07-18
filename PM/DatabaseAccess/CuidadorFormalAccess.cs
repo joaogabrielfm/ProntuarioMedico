@@ -31,6 +31,28 @@ namespace DatabaseAccess
             ExecNonQuery(sqlcomm);
         }
 
+        public bool VerificaCuidador(string cpf)
+        {
+            string sSQL = "";
+            sSQL += " SELECT COUNT(*) from tbl_cuidador_formal WHERE CPF = @cpf;";
+            SqlCommand sqlcomm = new SqlCommand();
+
+            sqlcomm.CommandText = sSQL;
+
+            SqlParameter sqlparam = new SqlParameter("cpf", cpf);
+            sqlcomm.Parameters.Add(sqlparam);
+
+            int count = (int)ExecScalar(sqlcomm);
+            if (count == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         //Esta funcao retorna todas as informações pessoais sobre um cuidador_formal
         public CuidadorFormal GetCuidadorFormal(string cpf)
         {

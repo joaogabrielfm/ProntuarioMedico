@@ -1,9 +1,32 @@
+C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\Database\bin\Debug\Database.dacpac
+C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\Database\bin\Debug\Database.dll
+C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\Database\bin\Debug\Database.pdb
+C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\Database\obj\Debug\Model.xml
+C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\Database\obj\Debug\refactor.xml
+C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\Database\obj\Debug\postdeploy.sql
+C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\Database\obj\Debug\predeploy.sql
+C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\Database\obj\Debug\Database.dll
+C:\Users\Eduardo Noronha\Documents\GitHub\ProntuarioMedico\PM\Database\obj\Debug\Database.pdb
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\Database\bin\Debug\Database.dacpac
+C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\Database\bin\Debug\Database.dll
+C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\Database\bin\Debug\Database.pdb
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\Database\obj\Debug\Model.xml
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\Database\obj\Debug\refactor.xml
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\Database\obj\Debug\postdeploy.sql
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\Database\obj\Debug\predeploy.sql
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\Database\obj\Debug\Database.dll
 C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\Database\obj\Debug\Database.pdb
-C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\Database\bin\Debug\Database.dll
-C:\Users\Savelli\Documents\GitHub\ProntuarioMedico\PM\Database\bin\Debug\Database.pdb
+C:\Users\admin\Documents\ProntuarioMedico\PM\Database\bin\Debug\Database.dacpac
+C:\Users\admin\Documents\ProntuarioMedico\PM\Database\bin\Debug\Database.dll
+C:\Users\admin\Documents\ProntuarioMedico\PM\Database\bin\Debug\Database.pdb
+C:\Users\admin\Documents\ProntuarioMedico\PM\Database\obj\Debug\Model.xml
+C:\Users\admin\Documents\ProntuarioMedico\PM\Database\obj\Debug\refactor.xml
+C:\Users\admin\Documents\ProntuarioMedico\PM\Database\obj\Debug\postdeploy.sql
+C:\Users\admin\Documents\ProntuarioMedico\PM\Database\obj\Debug\predeploy.sql
+C:\Users\admin\Documents\ProntuarioMedico\PM\Database\obj\Debug\Database.dll
+C:\Users\admin\Documents\ProntuarioMedico\PM\Database\obj\Debug\Database.pdb
+C:\Users\victo\Desktop\TrabalhoLabBD\ProntuarioMedico\PM\Database\bin\Debug\Database.dacpac
+C:\Users\victo\Desktop\TrabalhoLabBD\ProntuarioMedico\PM\Database\bin\Debug\Database.dll
+C:\Users\victo\Desktop\TrabalhoLabBD\ProntuarioMedico\PM\Database\bin\Debug\Database.pdb
+C:\Users\victo\Desktop\TrabalhoLabBD\ProntuarioMedico\PM\Database\obj\Debug\Database.dll
+C:\Users\victo\Desktop\TrabalhoLabBD\ProntuarioMedico\PM\Database\obj\Debug\Database.pdb
